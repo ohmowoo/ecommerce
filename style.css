@@ -1,0 +1,631 @@
+html, body {
+    font-family: 'Poiret One', cursive;
+    color: #613f38;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.nav.scrolled {
+    background-color: #fff;
+    transition: 300ms ease-in;
+}
+
+.menu-open {
+    position: absolute;
+    line-height: 70px;
+    left: 1.4rem;
+    cursor: pointer;
+}
+
+ion-icon {
+    font-size: 32px;
+    vertical-align: middle;
+    color: #613f38;
+}
+
+.brand span a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    line-height: 70px;
+    font-weight: 900;
+    font-family: 'Poiret One', cursive;
+    color: #613f38;
+}
+
+.brand a:hover {
+    text-decoration: none;
+}
+
+.cart {
+    position: absolute;
+    line-height: 70px;
+    right: 1.4rem;
+}
+
+.menu {
+    position: fixed;
+    width: 30%;
+    left: -30%;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+@media(max-width: 900px) {
+      .menu {
+            width: 100%;
+            left: -100%;
+      }
+}
+
+.menu-close {
+    position: relative;
+    line-height: 70px;
+    float: right;
+    margin-right: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu ul li {
+    padding-bottom: 20px;
+}
+
+.menu ul li .item {
+      font-family: 'Noto Sans TC', sans-serif;
+      color: #613f38 !important;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+}
+
+.media-menu {
+    position: relative;
+    top: 50%;
+}
+
+.media-menu ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.hero-section {
+    height: 100vh;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.hero-left {
+    height: 100vh;
+    background: #e9dad1;
+    z-index: -1;
+    position: relative;
+}
+
+.tagline {
+    position: absolute;
+    bottom: 130px;
+    left: 40px;  
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.5rem;
+    color: #613f38;
+    font-weight: 500;
+}
+
+.tagline span{
+    font-family: 'Poiret One', cursive;
+}
+
+.logo {
+    color: #613f38 !important;
+    font-family: 'Poiret One', cursive;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.shipping {
+    position: absolute;
+    bottom: 30px;
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.hero-right{
+      height: 100vh;
+      position: relative;    
+}
+
+.hero-image{
+      width: 120%;
+      position: absolute;
+      left: -20%;
+      top: 70%;
+      transform: translateY(-70%);   
+}
+
+img {
+    width: 100%;
+}
+
+.media {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    margin-right: 20px;
+}
+
+.media ul {
+    list-style: none;
+}
+
+.media ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+@media(max-width: 900px) {
+    .hero-image {
+      display: none;
+    }
+
+    .media {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .media ul {
+      margin-right: 0;
+    }
+}
+
+#heading {
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 1.7rem;
+      padding-bottom: 0;
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #613f38;
+}
+
+#heading::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      border-bottom: 1px solid #e9dad1;
+}
+
+.section {
+    padding: 80px 40px;
+}
+
+.section p {
+      font-family: "Playfair Display";
+      font-size: 24px;
+      font-weight: 300;
+}
+
+.prod {
+      margin-top: 20px;
+}
+
+.prod img{
+      height: 70%;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.2s ease-in 0.2s;
+}
+
+.prod img:hover  {
+      transform: scale(1.02, 1.02);
+}
+
+#prod-desc {
+      margin-top: 16px;
+      font-size: 14px;
+      font-weight: 300;
+}
+
+.section p.price {
+      font-family: "Larsseit";
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 16px;
+      margin-top: 10px;
+      color: #613f38;
+}
+
+#old-price{
+      margin-right: 10px;
+      text-decoration: line-through;
+}
+
+#new-price{
+     color: darkred;
+     margin-right: 10px;
+}
+
+#discount{
+      color: darkred;
+      border: 1px solid darkred;
+      padding: 2px;
+}
+
+.prod-list #prod-desc {
+      font-family: 'Poiret One', cursive;
+      color: #613f38;
+}
+
+.prod-sec {
+      border-top: 1px solid rgba(0,0,0,0.1);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.prod-sec p {
+      font-family: "Playfair Display";
+      font-size: 24px;
+      font-weight: 300;
+}
+
+@media(max-width: 900px) {
+      .prod-sec {
+            padding-left: 30px;
+            width: 100%;
+            border: none;
+      }
+
+      .prod-sec a {
+            display: none;
+      }
+}
+
+.prod-img{
+      height: 70vh;
+}
+
+.prod-img img{
+      height: 100%;
+      object-fit: cover;
+      position: relative;   
+}
+
+.story .tagline{
+      background-color: rgba(0,0,0,0.5);
+      color: #fff;
+      padding: 30px 60px;
+      position: absolute;
+      left: 0;
+      bottom: 15%;
+}
+
+.link .button{
+      color: #fff;
+      font-family: 'Poiret One', cursive;
+      display: inline-block;
+      padding: 3px 20px;
+      background-color: rgba(225,225,225,0.5);
+      transition: all 0.2s ease-in 0.2s;
+}
+
+.link .button:hover{
+      text-decoration: none;
+      background-color: #fff;
+      color: #613f38;
+}
+
+.shop{
+      color: #613f38;
+}
+
+.shop .link .more{
+      color: #fff;
+      font-family: 'Poiret One', cursive;
+      display: inline-block;
+      padding: 3px 20px;
+      background-color: rgba(97,63,56,0.5);
+      transition: all 0.2s ease-in 0.2s;
+      font-size: 1.5rem;
+}
+
+.shop .link .more:hover{
+      background-color: #613f38;
+      text-decoration: none;
+}
+
+.prod2 img{
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+}
+
+.footer {
+      padding: 30px 0;
+      background: #e9dad1;
+}
+
+.block {
+      margin-top: 40px;
+}
+
+.footer .media {
+      top: 20px !important;
+}
+
+footer p {
+      text-align: center;
+      font-family: "Larsseit" !important;
+      font-size: 14px !important;
+      color: #613f38;
+}
+
+/* Photo */
+
+.hero {
+      height: 40vh;
+      background: #e9dad1;
+      position: relative;
+}
+
+.hero .title{
+      color: #fff;
+      border: 1px solid #fff;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 1.7rem;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 7px 10px 5px 5px;
+}
+
+.hero .title::after{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 3px;
+      left: -5px;
+      right: 3px;
+      bottom: -5px;
+      border: 1px solid #fff;
+}
+
+.section.album{
+      padding: 80px 200px;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.section .card-album{
+      height: 80vh;
+}
+
+.col-album{
+      height: 100%;
+}
+
+.card-album .pic{
+      object-fit: cover;
+      width: 100%;
+      height: 60%;
+}
+
+.card-album .pic:nth-child(1){
+      margin-bottom: 10px;
+}
+
+.card-album .pic.one{
+      height: 40%;
+}
+
+/* PRODUCT PAGE */
+
+.product-sec {
+      padding-top: 60px;
+      height: 100vh;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+@media(max-width: 900px) {
+      .product-sec {
+            margin-bottom: 140px;
+            border-bottom: none !important;
+      }
+}
+
+.prod-left {
+      border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.prod-opt {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+}
+
+#prod-name {
+      font-family: "Playfair Display";
+}
+
+.prod-opt .price {
+      padding: 16px 0;
+}
+
+.input-helper {
+      position: relative;
+      display: inline-block;
+      font-family: "Larsseit";
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 10px;
+      letter-spacing: 4px;
+}
+
+.input-helper:before {
+      content: '';
+      display: block;
+      position: absolute;
+}
+
+.input-helper--radio {
+      padding-left: 18px;
+}
+
+.input-helper--radio:before {
+      top: 2px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid #222;
+}
+
+input[type="radio"] {
+      display: none;
+}
+
+input[type="radio"]:checked + label:before {
+      background: #222;
+}
+
+.product-sec ::placeholder, input {
+      font-family: "Larsseit";
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 10px;
+      letter-spacing: 4px;
+      padding-left: 10px;
+      padding-bottom: 3px;
+}
+
+.product-sec input {
+      width: 130px;
+}
+
+@media(max-width: 900px) {
+      .product-sec .hero-image {
+            margin-top: 50%;
+            display: block !important;
+            height: 100vh;
+      }
+
+      .prod-opt {
+            padding-top: 300px;
+      }
+}
+
+.add-prod {
+      margin: 50px 0;
+}
+
+.add-prod a {
+      padding: 20px 40px;
+      background: #000;
+      font-weight: 300;
+      letter-spacing: 4px;
+      color: #fff !important;
+      text-decoration: none;
+}
+
+.add-prod a:hover {
+      text-decoration: none;
+}
+
+
+/* Story */
+.bc-pic{
+      background-image: url(images/bgimg.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+      padding: 200px 100px;
+}
+.black{
+      background-color: rgba(97,63,56,0.7);
+      width: 60%;
+      margin: 0 auto;
+      padding: 50px;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: 500;
+      text-align: justify;
+}
+
+.black span{
+      font-family: 'Poiret One', cursive; 
+}
+
+/* Contact */
+
+.contact{
+      padding: 100px;
+}
+
+#map {
+      height: 80%;
+      width: 100%;
+}
+
+.gm-style-cc, .gm-control-active, .gm-style-mtc{
+      display: none;
+}
+
+.about-hero .content p{
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 1.5rem;
+      color: #613f38;
+}
+
+form label, textarea {
+      font-family: "Larsseit";
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #613f38;
+}
+
+.form-control {
+      box-shadow: none !important;
+}
+
+form input, textarea {
+      border-radius: 0 !important;
+}
+
+form input:focus, textarea:focus {
+      outline: none !important;
+      border: 2px solid #613f38 !important;
+}
+
+.add-prod a {
+      padding: 15px 25px;
+      background: #613f38 ;
+      font-weight: 300;
+      letter-spacing: 4px;
+      color: #fff !important;
+      text-decoration: none;
+}
