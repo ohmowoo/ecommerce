@@ -52,29 +52,27 @@ ion-icon {
 
 .menu {
     position: fixed;
-    width: 30%;
-    left: -30%;
-    height: 100vh;
-    background: #fff;
-    border-right: 1px solid rgba(0,0,0,0.1);
+    width: 100vw;
+    top: -50%;
+    height: 50%;
+    background: rgba(97,63,56,0.96);
     z-index: 2;
-}
-
-@media(max-width: 576px) {
-      .menu {
-            width: 100%;
-            left: -100%;
-      }
 }
 
 .menu-close {
     position: relative;
     line-height: 70px;
-    float: right;
-    margin-right: 20px;
+    float: left;
+    margin-left: 25px;
+}
+
+.menu-close ion-icon{
+      color: #fff;
 }
 
 .menu ul {
+      margin: 0;
+      padding: 0;
     list-style-type: none;
     position: relative;
     top: 50%;
@@ -82,19 +80,25 @@ ion-icon {
 }
 
 .menu ul li {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .menu ul li .item {
       font-family: 'Noto Sans TC', sans-serif;
-      color: #613f38 !important;
+      color: #fff !important;
       font-size: 1.5rem;
       text-transform: uppercase;
       letter-spacing: 2px;
+      position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.1s ease-in 0.1s;
+    
 }
 
 .menu ul li a:hover {
     text-decoration: none;
+    font-size: 1.7rem;
 }
 
 .media-menu {
