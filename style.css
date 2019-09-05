@@ -60,7 +60,7 @@ ion-icon {
     z-index: 2;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 576px) {
       .menu {
             width: 100%;
             left: -100%;
@@ -263,6 +263,7 @@ img {
 #old-price{
       margin-right: 10px;
       text-decoration: line-through;
+      font-size: 0.9rem;
 }
 
 #new-price{
@@ -272,8 +273,9 @@ img {
 
 #discount{
       color: darkred;
-      border: 1px solid darkred;
+      border: 0.5px solid darkred;
       padding: 2px;
+      font-size: 0.5rem;
 }
 
 .prod-list #prod-desc {
@@ -383,6 +385,106 @@ footer p {
       color: #613f38;
 }
 
+/* Product */
+
+.modal .modal-content{
+      border-radius: 0;
+}
+
+.modal-header .cow {
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 50px;
+}
+
+.modal-header .row{
+      height: 60vh;
+      width: 100%;
+}
+
+.modal-header .mo-col{
+      height: 100%;
+}
+
+.modal-header img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.prod-opt {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+}
+
+.prod-opt #price {
+      padding: 16px 0;
+      font-family: "Larsseit";
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+      color: #613f38;
+}
+
+.prod-opt #new-price{
+      margin-right: 0;
+}
+
+@media(max-width: 900px) {
+      .hero-image {
+            margin-top: 50%;
+            display: block !important;
+            height: 100vh;
+      }
+
+      .prod-opt {
+            padding-top: 300px;
+      }
+}
+
+.add-prod {
+      margin: 50px 0;
+}
+
+.add-prod span {
+      padding: 15px;
+      background: #613f38;
+      font-weight: 300;
+      letter-spacing: 2px;
+      color: #fff;
+}
+
+.add-prod a:hover {
+      text-decoration: none;
+}
+
+#prod-name{
+      font-family: 'Poiret One', cursive;
+      color: #613f38;
+      font-weight: 900;
+}
+
+.prod-opt #discount{
+      margin-top: 15px;
+      display: inline-block;
+}
+
+.prod-opt input{
+      width: 40px;
+}
+
+.prod-opt input:focus {
+      outline: none;
+      border: 1px solid #613f38;
+}
+
+.prod-opt label{
+      color: #613f38;
+      margin-right: 10px;
+}
+
 /* Photo */
 
 .hero {
@@ -441,128 +543,16 @@ footer p {
       height: 40%;
 }
 
-/* PRODUCT PAGE */
-
-.product-sec {
-      padding-top: 60px;
-      height: 100vh;
-      border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-@media(max-width: 900px) {
-      .product-sec {
-            margin-bottom: 140px;
-            border-bottom: none !important;
-      }
-}
-
-.prod-left {
-      border-right: 1px solid rgba(0,0,0,0.1);
-}
-
-.prod-opt {
-      position: absolute;
-      top: 50%;
-      left: 40%;
-      transform: translate(-50%, -50%);
-}
-
-#prod-name {
-      font-family: "Playfair Display";
-}
-
-.prod-opt .price {
-      padding: 16px 0;
-}
-
-.input-helper {
-      position: relative;
-      display: inline-block;
-      font-family: "Larsseit";
-      text-transform: uppercase;
-      font-weight: 400;
-      font-size: 10px;
-      letter-spacing: 4px;
-}
-
-.input-helper:before {
-      content: '';
-      display: block;
-      position: absolute;
-}
-
-.input-helper--radio {
-      padding-left: 18px;
-}
-
-.input-helper--radio:before {
-      top: 2px;
-      left: 0;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      border: 1px solid #222;
-}
-
-input[type="radio"] {
-      display: none;
-}
-
-input[type="radio"]:checked + label:before {
-      background: #222;
-}
-
-.product-sec ::placeholder, input {
-      font-family: "Larsseit";
-      text-transform: uppercase;
-      font-weight: 400;
-      font-size: 10px;
-      letter-spacing: 4px;
-      padding-left: 10px;
-      padding-bottom: 3px;
-}
-
-.product-sec input {
-      width: 130px;
-}
-
-@media(max-width: 900px) {
-      .product-sec .hero-image {
-            margin-top: 50%;
-            display: block !important;
-            height: 100vh;
-      }
-
-      .prod-opt {
-            padding-top: 300px;
-      }
-}
-
-.add-prod {
-      margin: 50px 0;
-}
-
-.add-prod a {
-      padding: 20px 40px;
-      background: #000;
-      font-weight: 300;
-      letter-spacing: 4px;
-      color: #fff !important;
-      text-decoration: none;
-}
-
-.add-prod a:hover {
-      text-decoration: none;
-}
-
 
 /* Story */
+
 .bc-pic{
       background-image: url(images/bgimg.jpg);
       background-attachment: fixed;
       background-size: cover;
       padding: 200px 100px;
 }
+
 .black{
       background-color: rgba(97,63,56,0.7);
       width: 60%;
@@ -628,4 +618,8 @@ form input:focus, textarea:focus {
       letter-spacing: 4px;
       color: #fff !important;
       text-decoration: none;
+}
+
+form .add-prod span{
+      padding: 15px 25px;
 }
