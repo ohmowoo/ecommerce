@@ -5,28 +5,29 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="icon" href="yourIconUrl" type="image/gif" sizes="16x16">
+      <link rel="shortcut icon" href="images/favicon.ico">
       <title>Chair Co.</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100|Poiret+One&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="animate.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
       <nav class="nav">
             <div class="menu-open">
-                  <ion-icon name="apps"></ion-icon>
+                  <i class="fas fa-th"></i>
             </div>
             <div class="brand">
                   <span><a href="index.html" class="logo">Chair Co.</a></span>
             </div>
             <div class="cart">
-                  <ion-icon name="cart"></ion-icon>
+                  <i class="fas fa-shopping-cart"></i>
             </div>
             <div class="menu">
                   <div class="menu-close">
-                        <ion-icon name="close"></ion-icon>
+                        <i class="fas fa-times"></i>
                   </div>
                   <ul>
                         <li><a href="index.html" class="item">首頁</a></li>
@@ -81,31 +82,31 @@
             <div class="section container">
                   <footer>
                         <div class="row">
-                              <div class="col-xl-4 block">
+                              <div class="col-xl-4 col-md-4 block">
                                     <p>Heslington, York
                                           <br>
                                           North Yorkshire, YO10 5DD
                                           <br>
                                           United Kingdom</p>
                               </div>
-                              <div class="col-xl-4 block">
+                              <div class="col-xl-4 col-md-4 block">
                                     <p>常見問題
                                           <br>
                                           運費
                                           <br>
                                           退貨政策</p>
                               </div>
-                              <div class="col-xl-4 block">
+                              <div class="col-xl-4 col-md-4 block">
                                     <div class="media">
                                           <ul>
                                                 <li>
-                                                      <ion-icon name="logo-facebook"></ion-icon>
+                                                      <i class="fab fa-facebook-f"></i>
                                                 </li>
                                                 <li>
-                                                      <ion-icon name="logo-instagram"></ion-icon>
+                                                      <i class="fab fa-instagram"></i>
                                                 </li>
                                                 <li>
-                                                      <ion-icon name="mail"></ion-icon>
+                                                      <i class="fas fa-envelope"></i>
                                                 </li>
                                           </ul>
                                     </div>
@@ -118,7 +119,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
       <script src="wow.min.js"></script>
       <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAewqTlA2lMjzPRrZkPT4NoMlBWvPY220&callback=initMap">
@@ -152,366 +152,366 @@
                   var uoy = { lat: 53.960317, lng: -1.083521 };
                   var map = new google.maps.Map(
                         document.getElementById('map'), {
-                              zoom: 16,
-                              center: uoy,
-                              styles:
-                                    [
-                                          {
-                                                "featureType": "administrative",
-                                                "elementType": "geometry.fill",
-                                                "stylers": [
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "administrative",
-                                                "elementType": "geometry.stroke",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#6e3a35"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "administrative",
-                                                "elementType": "labels.text.fill",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#6e3a35"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "administrative",
-                                                "elementType": "labels.text.stroke",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "off"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "administrative.locality",
-                                                "elementType": "labels.icon",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#6e3a35"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      },
-                                                      {
-                                                            "visibility": "on"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "landscape",
-                                                "elementType": "geometry.fill",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#efebea"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "landscape",
-                                                "elementType": "geometry.stroke",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#af9d94"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      },
-                                                      {
-                                                            "visibility": "off"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "landscape",
-                                                "elementType": "labels.text.fill",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#6e3a35"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "landscape",
-                                                "elementType": "labels.text.stroke",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "off"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "landscape.man_made",
-                                                "elementType": "geometry.fill",
-                                                "stylers": [
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "poi",
-                                                "elementType": "geometry",
-                                                "stylers": [
-                                                      {
-                                                            "hue": "#ff0000"
-                                                      },
-                                                      {
-                                                            "saturation": "34"
-                                                      },
-                                                      {
-                                                            "visibility": "off"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "poi",
-                                                "elementType": "labels.text.fill",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#6e3a35"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "poi",
-                                                "elementType": "labels.text.stroke",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "off"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "poi",
-                                                "elementType": "labels.icon",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "off"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "road",
-                                                "elementType": "geometry.stroke",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "off"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "road",
-                                                "elementType": "labels.text.fill",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#6e3a35"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "road",
-                                                "elementType": "labels.text.stroke",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "off"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "road",
-                                                "elementType": "labels.icon",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "off"
-                                                      },
-                                                      {
-                                                            "lightness": "60"
-                                                      },
-                                                      {
-                                                            "gamma": "1.00"
-                                                      },
-                                                      {
-                                                            "hue": "#ff0000"
-                                                      },
-                                                      {
-                                                            "saturation": "-90"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "road.highway",
-                                                "elementType": "geometry.fill",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#ffffff"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "road.highway",
-                                                "elementType": "labels.icon",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "simplified"
-                                                      },
-                                                      {
-                                                            "hue": "#ff0000"
-                                                      },
-                                                      {
-                                                            "weight": "0.01"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "transit",
-                                                "elementType": "geometry.fill",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#bfb1a9"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "transit",
-                                                "elementType": "geometry.stroke",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#bfb1a9"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "transit",
-                                                "elementType": "labels.text.fill",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#6e3a35"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "transit",
-                                                "elementType": "labels.text.stroke",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "off"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "transit",
-                                                "elementType": "labels.icon",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "on"
-                                                      },
-                                                      {
-                                                            "hue": "#ff0000"
-                                                      },
-                                                      {
-                                                            "saturation": "-90"
-                                                      },
-                                                      {
-                                                            "lightness": "0"
-                                                      },
-                                                      {
-                                                            "gamma": "1.00"
-                                                      },
-                                                      {
-                                                            "weight": "1"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "water",
-                                                "elementType": "all",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#dfd8d4"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "water",
-                                                "elementType": "labels.text",
-                                                "stylers": [
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "water",
-                                                "elementType": "labels.text.fill",
-                                                "stylers": [
-                                                      {
-                                                            "color": "#6e3a35"
-                                                      },
-                                                      {
-                                                            "saturation": "0"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "water",
-                                                "elementType": "labels.text.stroke",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "off"
-                                                      }
-                                                ]
-                                          },
-                                          {
-                                                "featureType": "water",
-                                                "elementType": "labels.icon",
-                                                "stylers": [
-                                                      {
-                                                            "visibility": "off"
-                                                      }
-                                                ]
-                                          }
-                                    ]
-                        });
+                        zoom: 16,
+                        center: uoy,
+                        styles:
+                              [
+                                    {
+                                          "featureType": "administrative",
+                                          "elementType": "geometry.fill",
+                                          "stylers": [
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "administrative",
+                                          "elementType": "geometry.stroke",
+                                          "stylers": [
+                                                {
+                                                      "color": "#6e3a35"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "administrative",
+                                          "elementType": "labels.text.fill",
+                                          "stylers": [
+                                                {
+                                                      "color": "#6e3a35"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "administrative",
+                                          "elementType": "labels.text.stroke",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "off"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "administrative.locality",
+                                          "elementType": "labels.icon",
+                                          "stylers": [
+                                                {
+                                                      "color": "#6e3a35"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                },
+                                                {
+                                                      "visibility": "on"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "landscape",
+                                          "elementType": "geometry.fill",
+                                          "stylers": [
+                                                {
+                                                      "color": "#efebea"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "landscape",
+                                          "elementType": "geometry.stroke",
+                                          "stylers": [
+                                                {
+                                                      "color": "#af9d94"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                },
+                                                {
+                                                      "visibility": "off"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "landscape",
+                                          "elementType": "labels.text.fill",
+                                          "stylers": [
+                                                {
+                                                      "color": "#6e3a35"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "landscape",
+                                          "elementType": "labels.text.stroke",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "off"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "landscape.man_made",
+                                          "elementType": "geometry.fill",
+                                          "stylers": [
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "poi",
+                                          "elementType": "geometry",
+                                          "stylers": [
+                                                {
+                                                      "hue": "#ff0000"
+                                                },
+                                                {
+                                                      "saturation": "34"
+                                                },
+                                                {
+                                                      "visibility": "off"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "poi",
+                                          "elementType": "labels.text.fill",
+                                          "stylers": [
+                                                {
+                                                      "color": "#6e3a35"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "poi",
+                                          "elementType": "labels.text.stroke",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "off"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "poi",
+                                          "elementType": "labels.icon",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "off"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "road",
+                                          "elementType": "geometry.stroke",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "off"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "road",
+                                          "elementType": "labels.text.fill",
+                                          "stylers": [
+                                                {
+                                                      "color": "#6e3a35"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "road",
+                                          "elementType": "labels.text.stroke",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "off"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "road",
+                                          "elementType": "labels.icon",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "off"
+                                                },
+                                                {
+                                                      "lightness": "60"
+                                                },
+                                                {
+                                                      "gamma": "1.00"
+                                                },
+                                                {
+                                                      "hue": "#ff0000"
+                                                },
+                                                {
+                                                      "saturation": "-90"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "road.highway",
+                                          "elementType": "geometry.fill",
+                                          "stylers": [
+                                                {
+                                                      "color": "#ffffff"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "road.highway",
+                                          "elementType": "labels.icon",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "simplified"
+                                                },
+                                                {
+                                                      "hue": "#ff0000"
+                                                },
+                                                {
+                                                      "weight": "0.01"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "transit",
+                                          "elementType": "geometry.fill",
+                                          "stylers": [
+                                                {
+                                                      "color": "#bfb1a9"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "transit",
+                                          "elementType": "geometry.stroke",
+                                          "stylers": [
+                                                {
+                                                      "color": "#bfb1a9"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "transit",
+                                          "elementType": "labels.text.fill",
+                                          "stylers": [
+                                                {
+                                                      "color": "#6e3a35"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "transit",
+                                          "elementType": "labels.text.stroke",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "off"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "transit",
+                                          "elementType": "labels.icon",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "on"
+                                                },
+                                                {
+                                                      "hue": "#ff0000"
+                                                },
+                                                {
+                                                      "saturation": "-90"
+                                                },
+                                                {
+                                                      "lightness": "0"
+                                                },
+                                                {
+                                                      "gamma": "1.00"
+                                                },
+                                                {
+                                                      "weight": "1"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "water",
+                                          "elementType": "all",
+                                          "stylers": [
+                                                {
+                                                      "color": "#dfd8d4"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "water",
+                                          "elementType": "labels.text",
+                                          "stylers": [
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "water",
+                                          "elementType": "labels.text.fill",
+                                          "stylers": [
+                                                {
+                                                      "color": "#6e3a35"
+                                                },
+                                                {
+                                                      "saturation": "0"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "water",
+                                          "elementType": "labels.text.stroke",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "off"
+                                                }
+                                          ]
+                                    },
+                                    {
+                                          "featureType": "water",
+                                          "elementType": "labels.icon",
+                                          "stylers": [
+                                                {
+                                                      "visibility": "off"
+                                                }
+                                          ]
+                                    }
+                              ]
+                  });
                   var marker = new google.maps.Marker({
                         position: uoy,
                         map: map,

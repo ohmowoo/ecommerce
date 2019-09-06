@@ -23,13 +23,13 @@ html, body {
     cursor: pointer;
 }
 
-ion-icon {
-    font-size: 32px;
-    vertical-align: middle;
+i {
+    font-size: 1rem;
+    line-height: 70px;
     color: #613f38;
 }
 
-.brand span a {
+.brand span .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -38,6 +38,8 @@ ion-icon {
     font-weight: 900;
     font-family: 'Poiret One', cursive;
     color: #613f38;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .brand a:hover {
@@ -66,8 +68,10 @@ ion-icon {
     margin-left: 25px;
 }
 
-.menu-close ion-icon{
+.menu-close i{
       color: #fff;
+      cursor: pointer;
+      font-size: 1.5rem;
 }
 
 .menu ul {
@@ -92,8 +96,7 @@ ion-icon {
       position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    transition: all 0.1s ease-in 0.1s;
-    
+    transition: all 0.1s ease-in 0.1s;  
 }
 
 .menu ul li a:hover {
@@ -137,14 +140,6 @@ ion-icon {
     font-family: 'Poiret One', cursive;
 }
 
-.logo {
-    color: #613f38 !important;
-    font-family: 'Poiret One', cursive;
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
 .shipping {
     position: absolute;
     bottom: 30px;
@@ -186,22 +181,6 @@ img {
     margin-right: 20px;
 }
 
-@media(max-width: 900px) {
-    .hero-image {
-      display: none;
-    }
-
-    .media {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
-
-    .media ul {
-      margin-right: 0;
-    }
-}
-
 #heading {
       font-family: 'Noto Sans TC', sans-serif;
       font-size: 1.7rem;
@@ -227,10 +206,9 @@ img {
     padding: 80px 40px;
 }
 
-.section p {
-      font-family: "Playfair Display";
-      font-size: 24px;
-      font-weight: 300;
+.section .storyline {
+      font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.5rem;
 }
 
 .prod {
@@ -238,7 +216,7 @@ img {
 }
 
 .prod img{
-      height: 70%;
+      height: 400px;
       width: 100%;
       object-fit: cover;
       transition: all 0.2s ease-in 0.2s;
@@ -290,24 +268,6 @@ img {
 .prod-sec {
       border-top: 1px solid rgba(0,0,0,0.1);
       border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-.prod-sec p {
-      font-family: "Playfair Display";
-      font-size: 24px;
-      font-weight: 300;
-}
-
-@media(max-width: 900px) {
-      .prod-sec {
-            padding-left: 30px;
-            width: 100%;
-            border: none;
-      }
-
-      .prod-sec a {
-            display: none;
-      }
 }
 
 .prod-img{
@@ -365,7 +325,7 @@ img {
 
 .prod2 img{
       width: 100%;
-      height: 70%;
+      height: 300px;
       object-fit: cover;
 }
 
@@ -409,17 +369,16 @@ footer p {
       height: 100%;
 }
 
+.modal-header .mo-col:nth-child(2){
+      height: 100%;
+      padding-top: 60px;
+      padding-left: 40px;
+}
+
 .modal-header img{
       width: 100%;
       height: 100%;
       object-fit: cover;
-}
-
-.prod-opt {
-      position: absolute;
-      top: 50%;
-      left: 40%;
-      transform: translate(-50%, -50%);
 }
 
 .prod-opt #price {
@@ -434,18 +393,6 @@ footer p {
 
 .prod-opt #new-price{
       margin-right: 0;
-}
-
-@media(max-width: 900px) {
-      .hero-image {
-            margin-top: 50%;
-            display: block !important;
-            height: 100vh;
-      }
-
-      .prod-opt {
-            padding-top: 300px;
-      }
 }
 
 .add-prod {
@@ -525,18 +472,10 @@ footer p {
       border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-.section .card-album{
-      height: 80vh;
-}
-
-.col-album{
-      height: 100%;
-}
-
 .card-album .pic{
       object-fit: cover;
       width: 100%;
-      height: 60%;
+      height: 400px;
 }
 
 .card-album .pic:nth-child(1){
@@ -544,9 +483,8 @@ footer p {
 }
 
 .card-album .pic.one{
-      height: 40%;
+      height: 300px;
 }
-
 
 /* Story */
 
@@ -559,9 +497,9 @@ footer p {
 
 .black{
       background-color: rgba(97,63,56,0.7);
-      width: 60%;
       margin: 0 auto;
       padding: 50px;
+      width: 60%;
       font-family: 'Noto Sans TC', sans-serif;
       font-size: 1.5rem;
       color: #fff;
@@ -580,7 +518,7 @@ footer p {
 }
 
 #map {
-      height: 80%;
+      height: 400px;
       width: 100%;
 }
 
@@ -626,4 +564,81 @@ form input:focus, textarea:focus {
 
 form .add-prod span{
       padding: 15px 25px;
+}
+
+@media(max-width:1200px){
+      .hero-left .tagline{
+            font-size: 0.9rem;
+      }
+      .hero-image {
+            width: 105%;
+            left: -5%;
+      }
+      .menu ul li {
+            padding-bottom: 30px;
+        }
+      .menu ul li .item, .story .tagline, .section .storyline, .shop .link .more, .prod-opt #price, .hero .title{
+            font-size: 1rem;
+      }
+      .modal-header .row{
+            height: 40vh;
+            overflow: auto;
+      }
+      .cow{
+            display: none;
+      }
+      .modal-header .mo-col:nth-child(2){
+            padding-left: 70px;
+      }
+      #prod-name{
+            font-size: 1.5rem;
+      }
+      .add-prod{
+            font-size: 0.5rem;
+      }
+      .section.album{
+            padding: 80px 40px;
+      }
+      .black{
+            font-size: 1rem;
+            width: 100%;
+      }
+      .about-hero .prod{
+            margin-bottom: 40px;
+      }
+}
+
+@media(max-width:767px){
+      .hero-left .tagline{
+            font-size: 0.5rem;
+            position: absolute;
+            top: 130px;
+            left: 5px;
+      }
+      .hero-image {
+            width: 102%;
+            left: -2%;
+      }
+
+      .brand span .logo {
+            font-size: 1.5rem;
+      }
+      .story .tagline {
+            bottom: 20px;
+      }
+      .prod2 img{
+            height: 90px;
+      }    
+      .modal-header .row{
+            height: 60vh;
+      }
+      .hero{
+            height: 50vh;
+      }
+      .card-album .pic:nth-child(2) {
+            margin-bottom: 10px;
+      }
+      .bc-pic, .contact{
+            padding: 60px 25px;
+      }
 }
