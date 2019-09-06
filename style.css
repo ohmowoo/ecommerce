@@ -625,6 +625,9 @@ form .add-prod span{
       .story .tagline {
             bottom: 20px;
       }
+      .section.prod-list{
+            padding:80px 10px;
+      }
       .row.section.shop{
             padding: 40px 15px;
       }
