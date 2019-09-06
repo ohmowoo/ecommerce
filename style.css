@@ -619,12 +619,14 @@ form .add-prod span{
             width: 102%;
             left: -2%;
       }
-
       .brand span .logo {
             font-size: 1.5rem;
       }
       .story .tagline {
             bottom: 20px;
+      }
+      .row.section.shop{
+            padding: 40px 15px;
       }
       .prod2 img{
             height: 90px;
